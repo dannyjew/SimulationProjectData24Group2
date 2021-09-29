@@ -4,10 +4,27 @@ def centre(time,centre_init):
         centre_count+=1
     return centre_count
 
-myList = ["one", "two", 37, "four", 51];
-for i in range(len(myList)):
-    if myList[i]==37:
-        myList[i]=48
+myList = ["one", "two", 37, "four", 51]
+#
+# for i in myList:
+#     if i == 37:
+#         myList.replace(48)
 
 
-print(myList);
+#
+# print(myList)
+
+# centres = [0]*(10)
+#
+# print(type(centres[3]))
+
+
+a_list = ["a", "b", "c"]
+
+for i in range(len(a_list)):
+    if a_list[i] == 'a':
+        a_list[i] += a_list[i]
+
+
+
+print(a_list)
