@@ -1,5 +1,4 @@
-
-from Simulation import *
+from Simulation_final import *
 import matplotlib.pyplot as plt
 import seaborn as sb
 import tkinter as tk
