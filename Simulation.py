@@ -3,6 +3,9 @@ import random as r
 
 accum_students = 0
 
+'''
+Loops through centres, if a centre is full it moves onto the next one, if not it takes in trainees
+'''
 def go_through_centres(centres,waiting_list,accum_students_in_training):
 
     acc_spaces_per_month=0
@@ -24,11 +27,13 @@ def go_through_centres(centres,waiting_list,accum_students_in_training):
 
                 if x > waiting_list:
                     centres[i] += waiting_list
+                    # for testing purposes
                     #print('1')
                     waiting_list=0
 
                 elif x <= waiting_list:
                     centres[i] += x
+                    # for testing purposes
                     #print('2')
                     waiting_list -= x
 
@@ -36,12 +41,15 @@ def go_through_centres(centres,waiting_list,accum_students_in_training):
 
                 if centre_intake > waiting_list:
                     centres[i] += waiting_list
+                    # for testing purposes
                     #print('3')
                     waiting_list = 0
 
                 elif centre_intake <= waiting_list:
+                    # for testing purposes
                     #print('4')
                     centres[i] += centre_intake
+                    # for testing purposes
                     # print(centres[i])
                     # print(centres)
 
@@ -55,9 +63,12 @@ def go_through_centres(centres,waiting_list,accum_students_in_training):
     return centres,waiting_list,accum_students_in_training
 
 
-
+#Testing the above function
 # print(go_through_centres([10,0,0],114))
 
+'''
+Function before GUI was introduced
+'''
 # def sim(time,centre_init):
 #
 #     centres = [0]*(centre_init)
@@ -88,7 +99,7 @@ def go_through_centres(centres,waiting_list,accum_students_in_training):
 
 
 
-
+# expected output
 def display(centre_count_tot,n_full,t_t,waiting_list,month):
 
     # print('Month:' + str(month))
@@ -103,7 +114,9 @@ def display(centre_count_tot,n_full,t_t,waiting_list,month):
 
 
 
-
+'''
+used to start the simulation before the GUI
+'''
 
 # time=int(input('How many months would you like the simulation to run (please insert a number):'))
 #

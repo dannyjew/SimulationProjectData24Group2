@@ -2,7 +2,9 @@ import tkinter as tk
 from tkinter import font
 from Simulation import *
 
-
+'''
+function for creating the existing number of centres, the random number of new students every two months
+'''
 
 def sim(time,centre_init):
 
