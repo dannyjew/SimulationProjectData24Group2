@@ -25,6 +25,6 @@ for i in range(len(a_list)):
     if a_list[i] == 'a':
         a_list[i] += a_list[i]
 
+b=list(range(len(a_list)))
 
-
-print(a_list)
+print(b)
